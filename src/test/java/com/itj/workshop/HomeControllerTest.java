@@ -22,6 +22,6 @@ public class HomeControllerTest {
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello world")));
+                .andExpect(content().string(containsString("Great")));
     }
 }
